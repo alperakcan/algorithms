@@ -1,5 +1,4 @@
 
-
 #include <stdlib.h>
 #include <string.h>
 
@@ -133,7 +132,7 @@ static int sink (struct binary_heap *binary_heap, size_t k)
 	while (k * 2 <= binary_heap->nitems) {
 		j = k * 2;
 		if ((j < binary_heap->nitems) &&
-				(comp(binary_heap->data, binary_heap->nitems, sizeof(void *), binary_heap->compare, binary_heap->context, j, j + 1) < 0)) {
+		   (comp(binary_heap->data, binary_heap->nitems, sizeof(void *), binary_heap->compare, binary_heap->context, j, j + 1) < 0)) {
 			j++;
 		}
 		if (comp(binary_heap->data, binary_heap->nitems, sizeof(void *), binary_heap->compare, binary_heap->context, k, j) >= 0) {

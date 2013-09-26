@@ -12,7 +12,6 @@ libsrc.a_files-y = \
 	insertion-sort.c \
 	shell-sort.c \
 	shuffle.c \
-	convex-hull.c \
 	counter-clockwise.c \
 	merge-sort.c \
 	bottom-up-merge-sort.c \
